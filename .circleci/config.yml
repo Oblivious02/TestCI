@@ -6,7 +6,7 @@ jobs:
     steps:
       - checkout
       - run:      
-          command: "echo World!"
+          command: "echo <<NAMEVAR>>"
   say-hello:
     docker:
       - image: circleci/node:13.8.0
